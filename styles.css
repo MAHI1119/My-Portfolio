@@ -1,0 +1,196 @@
+:root {
+  --primary: #f71856;
+  --dark: #030303;
+  --pure: #ffffff;
+  --ternary: #6c6b6e;
+  --light: #dbd9df;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smotthing: antialiased;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  background: var(--dark);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 90%, 0 100%);
+}
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header nav .left a {
+  color: var(--pure);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+header nav .left a:hover {
+  color: var(--primary);
+}
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.between {
+  justify-content: space-between;
+}
+header nav {
+  padding: 2rem 0px 4rem 0px;
+}
+header nav .logo {
+  margin-right: 3rem;
+}
+.btn {
+  padding: 0.6rem 2rem;
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-primary {
+  background: var(--primary);
+  text-decoration: none;
+  color: var(--dark);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: transparent;
+  border-color: var(--primary);
+  color: var(--primary);
+  color: var(--primary);
+}
+h6 {
+  color: var(--pure);
+}
+h1 {
+  color: var(--pure);
+}
+.left img {
+  width: 380px;
+  height: 480px;
+}
+.logo h2 {
+  color: var(--pure);
+}
+.logo h2 span {
+  color: var(--primary);
+}
+.btn-secondary {
+  background: transparent;
+  border-color: var(--primary);
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: var(--dark);
+}
+.pic .right {
+  color: var(--pure);
+}
+.pic .right h6 {
+  font-size: 1.6rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.pic .right h5 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.del {
+  color: var(--primary);
+  font-weight: 100;
+}
+.flex-1 {
+  flex: 1;
+}
+.justify-center {
+  justify-content: center;
+}
+/* About Css*/
+section {
+  padding: 6rem 0px;
+}
+.abtimg {
+  width: 300px;
+  height: 380px;
+  margin-left: 30px;
+}
+.flex-2 {
+  padding: 0px 35px;
+}
+.abt {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: var(--dark);
+}
+.me {
+  color: var(--primary);
+}
+.about h3 {
+  font-size: 1rem;
+  color: var(--dark);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.about p {
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  color: var(--ternary);
+  line-height: 1.8;
+}
+.skills2 {
+  background: var(--dark);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 90%, 0 100%);
+}
+.myskill {
+  color: var(--pure);
+
+  margin-bottom: 1rem;
+}
+.my {
+  color: var(--primary);
+}
+.prog {
+  width: 70px;
+  height: 70px;
+  border: 7px solid var(--primary);
+  border-radius: 50%;
+  background: black;
+  text-align: center;
+  font-size: 36px;
+}
+.para {
+  color: var(--pure);
+  width: 50%;
+  word-wrap: break-word;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  color: var(--ternary);
+  line-height: 1.8;
+}
+.skill-right {
+  color: var(--ternary);
+  float: right;
+  margin-top: -150px;
+  margin-right: 50px;
+  font-size: 24px;
+}
