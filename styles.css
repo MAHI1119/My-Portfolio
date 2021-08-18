@@ -156,41 +156,15 @@ section {
   font-weight: bolder;
   color: var(--ternary);
   line-height: 1.8;
+  margin-bottom: 1rem;
 }
-.skills2 {
-  background: var(--dark);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 90%, 0 100%);
-}
-.myskill {
-  color: var(--pure);
-
+.skills {
+  color: var(--dark);
   margin-bottom: 1rem;
 }
 .my {
   color: var(--primary);
 }
-.prog {
-  width: 70px;
-  height: 70px;
-  border: 7px solid var(--primary);
-  border-radius: 50%;
-  background: black;
-  text-align: center;
-  font-size: 36px;
-}
-.para {
-  color: var(--pure);
-  width: 50%;
-  word-wrap: break-word;
-  font-family: "Lato", sans-serif;
-  font-weight: bolder;
-  color: var(--ternary);
-  line-height: 1.8;
-}
-.skill-right {
-  color: var(--ternary);
-  float: right;
-  margin-top: -150px;
-  margin-right: 50px;
-  font-size: 24px;
+.list {
+  margin-left: 20px;
 }
