@@ -475,7 +475,11 @@ section {
   .flex-2 {
     display: block;
   }
-
+  .word {
+    width: 270px;
+    word-wrap: break-word;
+    margin-left: -45px;
+  }
   .about h3 {
     font-size: 1rem;
     color: var(--dark);
@@ -795,6 +799,10 @@ section {
     color: var(--light);
     padding: 1rem 0;
   }
+  .education .box-container .box h3 {
+    font-size: 1.8rem;
+  }
+
   .education .heading {
     font-size: 20px;
   }
