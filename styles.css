@@ -772,6 +772,12 @@ section {
     padding: 1rem 0;
   }
 }
+@media (min-width: 10px) and (max-width: 299px) {
+  .box span {
+    font-size: 4px;
+    padding: 2px;
+  }
+}
 @media (min-width: 10px) and (max-width: 319px) {
   .container {
     width: 260px;
@@ -854,18 +860,21 @@ section {
     margin-top: -80px;
   }
   .card {
-    width: 260px;
-    margin-left: -15px;
+    width: 230px;
+    margin-left: 2px;
+  }
+  .container .pro {
+    font-size: 16px;
   }
   .pro-img {
     width: 200px;
-    margin-left: 2px;
+    margin-left: -10px;
   }
   .card-content {
     width: 200px;
     height: 430px;
     align-items: center;
-    margin-left: 2px;
+    margin-left: -10px;
   }
   .contact .heading {
     font-size: 20px;
@@ -889,6 +898,22 @@ section {
   }
   .logo h2 {
     margin-left: 3rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 800px) {
+  .logo h2 {
+    color: var(--pure);
+    margin-left: 4rem;
+    margin-right: 2rem;
+    margin-top: -20px;
+  }
+}
+@media (min-width: 10px) and (max-width: 399px) {
+  .logo h2 {
+    color: var(--pure);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: -20px;
   }
 }
 @media (min-width: 10px) and (max-width: 800px) {
@@ -954,12 +979,7 @@ section {
   .a-pro {
     display: none;
   }
-  .logo h2 {
-    color: var(--pure);
-    margin-left: 4rem;
-    margin-right: 2rem;
-    margin-top: -20px;
-  }
+
   .card-wrapper {
     display: block;
   }
