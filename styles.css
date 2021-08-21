@@ -44,6 +44,7 @@ nav .left a {
   font-weight: 600;
   padding-top: 5px;
 }
+
 nav .left a:hover {
   color: var(--primary);
 }
@@ -339,6 +340,7 @@ section {
 /*Contact*/
 .contact {
   background: var(--dark);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 97%, 0 100%);
 }
 
 .contact .row {
@@ -425,6 +427,16 @@ section {
   border: 1px solid var(--primary);
   border-radius: 30px;
 }
+.copy-right {
+  background: var(--primary);
+  height: 40px;
+}
+
+.copy {
+  color: var(--dark);
+  text-align: center;
+  margin-top: 5px;
+}
 /*Media queries*/
 @media (max-width: 850px) {
   header nav {
@@ -448,6 +460,7 @@ section {
     border-radius: 50%;
     margin-top: -25px;
   }
+
   .pic .right h5 {
     font-size: 2rem;
     line-height: 1.2;
@@ -521,14 +534,18 @@ section {
     width: 100%;
     margin-top: -80px;
   }
+  .copy {
+    font-size: 12px;
+  }
 }
 @media (min-width: 320px) and (max-width: 400px) {
   .left #picture {
-    width: 220px;
-    height: 220px;
-
+    width: 300px;
+    height: 300px;
+    margin-left: -34px;
     border-radius: 50%;
   }
+
   .card {
     margin-left: -35px;
     width: 300px;
@@ -537,12 +554,15 @@ section {
     width: 260px;
     height: 260px;
     padding: 3px;
+    margin-left: -5px;
   }
+
   .card-content {
     background: var(--dark);
     padding: 1rem;
     width: 260px;
     height: 280px;
+    margin-left: -5px;
   }
   .education .box-container .box p {
     font-size: 12px;
@@ -558,7 +578,27 @@ section {
     border-radius: 50%;
   }
   .card {
-    margin-left: -60px;
+    margin-left: -70px;
+    width: 370px;
+  }
+  .pro-img {
+    margin-left: 0px;
+  }
+  .card-content {
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 581px) {
+  .card {
+    width: 400px;
+    margin-left: -80px;
+  }
+  .pro-img {
+    margin-left: 18px;
+  }
+  .card-content {
+    margin-left: 18px;
   }
 }
 
@@ -566,9 +606,7 @@ section {
   .container {
     width: 260px;
   }
-  .card {
-    width: 350px;
-  }
+
   .pic .right h5 {
     font-size: 3rem;
     line-height: 1.2;
@@ -667,12 +705,8 @@ section {
     margin-right: 2rem;
     margin-top: 40px;
   }
-}
-@media (min-width: 581px) and (max-width: 755px) {
-  .left #picture {
-    width: 350px;
-    height: 280px;
-    justify-content: center;
+  .copy {
+    font-size: 12px;
   }
 }
 
@@ -914,7 +948,7 @@ section {
   }
   .logo h2 {
     color: var(--pure);
-    margin-left: 6rem;
+    margin-left: 5rem;
     margin-right: 2rem;
     margin-top: -20px;
   }
@@ -957,6 +991,12 @@ section {
   .card-wrapper::-webkit-scrollbar {
     width: 0px;
   }
+  .logo {
+    padding-top: 10px;
+  }
+  .logo .right {
+    padding-top: 20px;
+  }
 }
 @media (min-width: 800px) and (max-width: 1085px) {
   #btnn {
@@ -966,6 +1006,7 @@ section {
     cursor: pointer;
     transition: all 0.3s ease;
     margin-left: 4rem;
+    margin-top: 15px;
   }
 }
 @media (min-width: 501px) and (max-width: 580px) {
@@ -976,17 +1017,44 @@ section {
     margin-left: -90px;
   }
 }
-@media (min-width: 581px) and (max-width: 750px) {
+@media (min-width: 581px) and (max-width: 755px) {
   .left #picture {
-    width: 350px;
+    width: 400px;
     height: 350px;
-
+    border-radius: 50%;
     margin-left: -90px;
   }
   .flex-1 {
     flex: 1;
   }
+  .right .naam {
+    color: var(--primary);
+  }
+  .right h6 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--pure);
+  }
+  .right h5 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  #btnn1 {
+    padding: 10px 60px;
+  }
+  .card {
+    width: 400px;
+    justify-content: center;
+    margin-left: -70px;
+  }
+  .pro-img {
+    margin-left: 18px;
+  }
+  .card-content {
+    margin-left: 18px;
+  }
 }
+
 @media (min-width: 800px) and (max-width: 930px) {
   .contact .row form {
     flex: 1 1 20rem;
